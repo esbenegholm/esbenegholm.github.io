@@ -16,7 +16,7 @@
     <main>
         <section>
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="A professional headshot of Esben Egholm" width="250">
+            <img src="images/esben.jpeg" alt="A selfie of Esben Egholm" width="500">
             <p>I am passionate about technology, accessibility, and making the web more inclusive for everyone. I enjoy working on projects that enhance usability for all users, including those with disabilities.</p>
         </section>
 
@@ -103,17 +103,19 @@
 
         <section>
             <h2>Contact Me</h2>
-            <form action="mailto:your@email.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+            <h3>Send an email to esbenegholm@tamu.edu</h3>
+            <form action="mailto:esbenegholm@tamu.edu" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="mail">E-mail:</label><br>
+                <input type="text" id="mail" name="mail"><br><br>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea><br><br>
+                <label for="comment">Message:</label><br>
+                <input type="text" id="comment" name="comment" size="50"><br><br>
 
-                <button type="submit">Send</button>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
             </form>
         </section>
     </main>
