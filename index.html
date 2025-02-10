@@ -3,81 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Esben Egholm - Accessible Bio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to My Bio</h1>
         <p>Hello, I'm Esben Egholm</p>
         <img src="images/decorative.avif" alt="" role="presentation" width="200">
     </header>
 
     <main>
         <section>
-            <h2>Links</h2>
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="A professional headshot of Esben Egholm" width="250">
+            <p>I am passionate about technology, accessibility, and making the web more inclusive for everyone. I enjoy working on projects that enhance usability for all users, including those with disabilities.</p>
+        </section>
+
+        <section>
+            <h2>Interests in Accessibility</h2>
             <ul>
-                <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                <li>Ensuring websites and applications are WCAG-compliant</li>
+                <li>Developing assistive technology</li>
+                <li>Enhancing UX/UI design for better accessibility</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative</a></li>
+                <li><a href="https://www.a11yproject.com/" target="_blank">The A11Y Project</a></li>
+                <li><a href="https://webaim.org/" target="_blank">WebAIM</a></li>
             </ul>
         </section>
 
         <section>
             <h2>Semantic Image</h2>
-            <img src="images/comic.webp" alt="A comic illustration" width="600">
+            <img src="images/comic.webp" alt="A comic illustration highlighting accessibility challenges on the web" width="600">
         </section>
 
         <section>
             <h2>Sample Table</h2>
             <table>
-                <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
-                </tr>
-                <tr>
-                    <td>Row 1, Cell 1</td>
-                    <td>Row 1, Cell 2</td>
-                    <td>Row 1, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Row 2, Cell 1</td>
-                    <td>Row 2, Cell 2</td>
-                    <td>Row 2, Cell 3</td>
-                </tr>
+                <caption>Example Data Table</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Example</th>
+                        <th>Importance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Accessibility</td>
+                        <td>Screen Readers</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Color Contrast</td>
+                        <td>Text Visibility</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Keyboard Navigation</td>
+                        <td>Tab Order</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
         <section>
-            <h2>Paragraphs</h2>
-            <p>s djnk jnldn jdslb hljnil njil nji lnj njui nj ilbj bui pyip vbiv  db disbf dfpidf hdfbdsuip fdisufihdsuf dsiubfduishfd fdbsuifbdhiuidpf fhidsbuidfphufdhusd dfhib fisp hfidphuf ds fbuddisfbds </p>
-            
-            <p>ipudaujdipsbf dffudispnfds hpfdsbupfdsndf shipfsdbuipfdb hdsifhudfs hfbnudps hf hidsbuf dsfbudsfupdshfd shfbdusipbfds fbudsbuipfds fdsibudfspfudps fdsbufdsnuf dshfdusbfd sfdufdshufid dfsnuifdhuf fdbsuifbdhiuidpf</p>
+            <h2>Why Accessibility Matters</h2>
+            <p><strong>Accessibility ensures that all users, regardless of ability, can access and use websites effectively.</strong></p>
+            <p><em>By following best practices, we can make digital spaces more inclusive and useful for everyone.</em></p>
         </section>
 
         <section>
-            <h2>List</h2>
+            <h2>Ordered List - Steps to Improve Accessibility</h2>
             <ol>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth item</li>
-                <li>Fifth item</li>
+                <li>Ensure sufficient color contrast</li>
+                <li>Use semantic HTML elements</li>
+                <li>Provide alternative text for images</li>
+                <li>Enable keyboard navigation</li>
+                <li>Test with screen readers</li>
             </ol>
         </section>
         
         <section>
-            <h2>Another List</h2>
+            <h2>Unordered List - Assistive Technologies</h2>
             <ul>
-                <li>Bullet point one</li>
-                <li>Bullet point two</li>
-                <li>Bullet point three</li>
-                <li>Bullet point four</li>
+                <li>Screen Readers (e.g., JAWS, NVDA, VoiceOver)</li>
+                <li>Speech-to-Text Software</li>
+                <li>Keyboard Shortcuts & Navigation</li>
+                <li>Braille Displays</li>
             </ul>
         </section>
-    </main>
-    
 
+        <section>
+            <h2>Contact Me</h2>
+            <form action="mailto:your@email.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2025 Esben Egholm. All rights reserved.</small></p>
+    </footer>
 </body>
 </html>
